@@ -1,0 +1,31 @@
+ZeroDrift Proprietary License
+
+Copyright (c) 2026 ZeroDrift. All rights reserved.
+
+This software and its documentation (the "Software") are proprietary and
+confidential to ZeroDrift.
+
+1. Use. You may install and run the Software only to access ZeroDrift services
+   under an active agreement with ZeroDrift, and only as described in its
+   documentation.
+
+2. Restrictions. Without prior written permission from ZeroDrift, you may not:
+   a. copy, modify, merge, publish, distribute, sublicense or sell the Software;
+   b. reverse engineer the Software or the ZeroDrift services it calls;
+   c. use the Software, or any output of the ZeroDrift services obtained through
+      it, to train, fine-tune, distill, evaluate or benchmark any machine
+      learning model, or to build a competing product or service.
+
+3. Ownership. ZeroDrift retains all right, title and interest in the Software
+   and the ZeroDrift services. No rights are granted except as stated above.
+
+4. No warranty. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+   EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR
+   PURPOSE AND NON-INFRINGEMENT.
+
+5. Limitation of liability. IN NO EVENT SHALL ZERODRIFT BE LIABLE FOR ANY
+   CLAIM, DAMAGES OR OTHER LIABILITY ARISING FROM OR IN CONNECTION WITH THE
+   SOFTWARE OR ITS USE.
+
+6. Termination. These rights end automatically if you breach these terms or
+   your agreement with ZeroDrift ends.

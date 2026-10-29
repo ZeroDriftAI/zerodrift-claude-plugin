@@ -1,0 +1,47 @@
+{
+  "name": "zerodrift",
+  "displayName": "ZeroDrift",
+  "version": "0.1.0",
+  "description": "Catch compliance, PII and sensitive-data problems in AI-written messages and documents against your company policies before they go out. Checks Gmail and Slack sends automatically, and Outlook, Teams, Google Drive and public-web content when Claude drafts, replies or publishes.",
+  "author": {
+    "name": "ZeroDrift",
+    "url": "https://zerodrift.com"
+  },
+  "homepage": "https://github.com/ZeroDriftAI/zerodrift-claude-plugin#readme",
+  "repository": "https://github.com/ZeroDriftAI/zerodrift-claude-plugin",
+  "privacyPolicyUrl": "https://zerodrift.com/legal/privacy-statement",
+  "license": "LicenseRef-ZeroDrift-Proprietary",
+  "keywords": [
+    "zerodrift",
+    "ai-governance",
+    "ai-output-enforcement",
+    "enforcement",
+    "compliance",
+    "communication-compliance",
+    "email-compliance",
+    "pre-send-checks",
+    "policy-validation",
+    "content-validation",
+    "pii",
+    "sensitive-data",
+    "data-loss-prevention",
+    "regulated-industries",
+    "sec-finra",
+    "financial-disclosures",
+    "risk-disclosures",
+    "outbound-messaging",
+    "inbound-messages",
+    "gmail",
+    "outlook",
+    "google-drive",
+    "google-workspace",
+    "slack",
+    "microsoft-teams"
+  ],
+  "mcpServers": {
+    "zerodrift": {
+      "type": "http",
+      "url": "${ZERODRIFT_MCP_URL:-https://mcp.zerodrift.ai/mcp}"
+    }
+  }
+}

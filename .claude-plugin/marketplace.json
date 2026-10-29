@@ -1,0 +1,14 @@
+{
+  "name": "zerodrift",
+  "description": "Enforcement for AI-written communication. Checks what Claude writes (emails, Slack and Teams messages, Google Drive documents, public web content) against your company policies before it is sent.",
+  "owner": {
+    "name": "ZeroDrift"
+  },
+  "plugins": [
+    {
+      "name": "zerodrift",
+      "source": "./",
+      "description": "Catch compliance, PII and sensitive-data problems in AI-written messages and documents against your company policies before they go out. Checks Gmail and Slack sends automatically, and Outlook, Teams, Google Drive and public-web content when Claude drafts, replies or publishes."
+    }
+  ]
+}

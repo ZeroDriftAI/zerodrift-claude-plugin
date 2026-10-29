@@ -1,0 +1,43 @@
+{
+  "description": "Validate outbound Gmail and Slack send/draft tools with ZeroDrift before they run.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "^mcp__.+__(send_message|create_draft|update_draft|reply)$",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:zerodrift:zerodrift",
+            "tool": "check_send",
+            "input": { "text": "${tool_input.subject}\n\n${tool_input.body}\n\n${tool_input.htmlBody}" },
+            "timeout": 50
+          }
+        ]
+      },
+      {
+        "matcher": "^mcp__.+__forward$",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:zerodrift:zerodrift",
+            "tool": "check_send",
+            "input": { "text": "${tool_input.forwardText}\n\n${tool_input.htmlBody}" },
+            "timeout": 50
+          }
+        ]
+      },
+      {
+        "matcher": "^mcp__.+__(slack_send_message|slack_send_message_draft|slack_schedule_message)$",
+        "hooks": [
+          {
+            "type": "mcp_tool",
+            "server": "plugin:zerodrift:zerodrift",
+            "tool": "check_send",
+            "input": { "text": "${tool_input.message}" },
+            "timeout": 50
+          }
+        ]
+      }
+    ]
+  }
+}
