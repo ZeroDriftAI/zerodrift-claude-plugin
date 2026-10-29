@@ -1,6 +1,11 @@
 # Changelog
 
-## zerodrift
+## ZeroDrift
+
+### 0.1.1
+
+- **Listing links:** terms of use, support and documentation links in the plugin directory.
+- **Validate skill:** loads its when-to-use guidance correctly, checks short Teams replies, and holds flagged content back from Google Drive writes and sharing.
 
 ### 0.1.0
 
