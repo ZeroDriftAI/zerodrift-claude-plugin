@@ -2,6 +2,10 @@
 
 ## ZeroDrift
 
+### 0.1.2
+
+- **README:** the send check also runs on other connectors' `send_message`, `reply`, `forward`, `create_draft` and `update_draft` tools.
+
 ### 0.1.1
 
 - **Listing links:** terms of use, support and documentation links in the plugin directory.

@@ -1,5 +1,5 @@
 {
-  "description": "Validate outbound Gmail and Slack send/draft tools with ZeroDrift before they run.",
+  "description": "Check send, reply, forward and draft tools with ZeroDrift before they run.",
   "hooks": {
     "PreToolUse": [
       {
