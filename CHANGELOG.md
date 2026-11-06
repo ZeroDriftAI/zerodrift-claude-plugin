@@ -2,6 +2,11 @@
 
 ## ZeroDrift
 
+### 0.1.3
+
+- **Codex:** ZeroDrift is available for Codex from `ZeroDriftAI/zerodrift-codex-plugin`. Gmail sends, drafts, draft updates and forwards are checked before they run.
+- **Skills:** sign-in steps cover both Claude Code and Codex.
+
 ### 0.1.2
 
 - **README:** the send check also runs on other connectors' `send_message`, `reply`, `forward`, `create_draft` and `update_draft` tools.

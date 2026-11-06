@@ -17,7 +17,7 @@ ZeroDrift validates only; it never rewrites your text. Claude explains each flag
 
 ## What gets checked
 
-- **Before sending:** Gmail send, reply, forward and draft actions, and Slack send, draft and schedule actions. The check also runs on other connectors' `send_message`, `reply`, `forward`, `create_draft` and `update_draft` tools. A `Blocked` message is stopped; `Warned` and `Passed` go through. Attachments, the original message of a forward, and saved drafts sent as-is are not checked.
+- **Before sending, automatically:** Gmail send, reply, forward and draft actions, and Slack send, draft and schedule actions, are checked before they run. The check also runs on other connectors' `send_message`, `reply`, `forward`, `create_draft` and `update_draft` tools. A `Blocked` message is stopped; `Warned` and `Passed` go through. Attachments, the original message of a forward, and saved drafts sent as-is are not checked.
 - **Other channels, through Claude**: the `validate` skill lets Claude check text before it goes to Outlook, Microsoft Teams, Google Drive documents or the public internet, when it replies to an inbound message, or when you ask it to screen an inbound message or document. Claude decides when to run the check, and nothing is stopped automatically; a do-not-send verdict reads `Flagged`, and Claude holds the content until you decide.
 - **Any draft on request**, with the command below or by asking Claude to check it.
 
