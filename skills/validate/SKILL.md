@@ -16,7 +16,7 @@ Run this skill without being asked when you are about to put written content in 
 - **Public content:** posts, web copy, announcements or anything published to the open internet.
 - **Inbound messages:** a reply you draft to a received message, and received messages or Drive documents the user asks you to screen.
 
-Gmail send, reply, forward and draft actions are already checked by a ZeroDrift hook, and in Claude Code so are Slack send, draft and schedule actions. Do not validate those drafts again before the action unless the user asks. Run this skill for every other channel above.
+When the ZeroDrift plugin's hooks are installed, they check Gmail send, reply, forward and draft actions, and in Claude Code also Slack send, draft and schedule actions; do not validate those drafts again before the action unless the user asks. Without those hooks, run this skill before every channel above, Gmail and Slack included.
 
 ## Steps
 

@@ -1,10 +1,16 @@
 # Changelog
 
-## ZeroDrift
+Each target has its own version. A release publishes only the targets whose version is new.
+
+## Claude
+
+### 0.1.4
+
+- **Validate skill:** without the plugin's hooks, checks Gmail and Slack drafts before sending too.
+- **README:** Claude-only setup and check scope.
 
 ### 0.1.3
 
-- **Codex:** ZeroDrift is available for Codex from `ZeroDriftAI/zerodrift-codex-plugin`. Gmail sends, drafts, draft updates and forwards are checked before they run.
 - **Skills:** sign-in steps cover both Claude Code and Codex.
 
 ### 0.1.2
@@ -27,3 +33,22 @@ First release. Validates drafts with ZeroDrift; never rewrites them.
 - **Never reported as passed when not checked:** saved drafts sent as-is, a missing sign-in, an unreachable service and an unavailable check are reported as not checked or as a hook error. Attachments and the original message of a forward are not checked.
 - **Connection check:** `/zerodrift:status` confirms you are signed in and shows how many rules are active.
 - **Sign in with ZeroDrift:** after installing, run `/mcp` and sign in to ZeroDrift in the browser. No API key to copy.
+
+## Codex
+
+### 0.1.4
+
+- **Validate skill:** without the plugin's hooks, checks Gmail drafts before sending too.
+
+### 0.1.3
+
+First release. ZeroDrift for Codex from `ZeroDriftAI/zerodrift-codex-plugin`.
+
+- **Check before sending:** Gmail sends, drafts, draft updates and forwards are checked before they run. A blocked message is stopped.
+- **Check on request:** ask Codex to check a draft with ZeroDrift.
+
+## OpenAI directory
+
+### 0.1.4
+
+First release for the ChatGPT and Codex plugin directory. Checks drafts on request; doesn't block sends.
