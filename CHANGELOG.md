@@ -4,6 +4,10 @@ Each target has its own version. A release publishes only the targets whose vers
 
 ## Claude
 
+### 0.1.6
+
+- **Icon:** new ZeroDrift icon.
+
 ### 0.1.5
 
 - **README:** support email is support@zerodrift.ai.
@@ -40,6 +44,10 @@ First release. Validates drafts with ZeroDrift; never rewrites them.
 
 ## Codex
 
+### 0.1.6
+
+- **Icon:** new ZeroDrift icon.
+
 ### 0.1.5
 
 - **Listing:** full description, capabilities, support link and icon.
@@ -57,6 +65,11 @@ First release. ZeroDrift for Codex from `ZeroDriftAI/zerodrift-codex-plugin`.
 - **Check on request:** ask Codex to check a draft with ZeroDrift.
 
 ## OpenAI directory
+
+### 0.1.6
+
+- **Icon:** new ZeroDrift icon.
+- **Skills:** check drafts only when asked; sign-in steps for ChatGPT and Codex.
 
 ### 0.1.5
 
