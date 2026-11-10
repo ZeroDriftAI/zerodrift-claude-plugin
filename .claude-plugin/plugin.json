@@ -1,7 +1,7 @@
 {
   "name": "zerodrift",
   "displayName": "ZeroDrift",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Catch compliance, PII and sensitive-data problems in AI-written messages and documents against your company policies before they go out. Checks Gmail and Slack sends automatically, and Outlook, Teams, Google Drive and public-web content when Claude drafts, replies or publishes.",
   "author": {
     "name": "ZeroDrift",

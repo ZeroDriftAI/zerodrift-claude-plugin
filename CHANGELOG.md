@@ -4,6 +4,10 @@ Each target has its own version. A release publishes only the targets whose vers
 
 ## Claude
 
+### 0.1.5
+
+- **README:** support email is support@zerodrift.ai.
+
 ### 0.1.4
 
 - **Validate skill:** without the plugin's hooks, checks Gmail and Slack drafts before sending too.
@@ -36,9 +40,14 @@ First release. Validates drafts with ZeroDrift; never rewrites them.
 
 ## Codex
 
+### 0.1.5
+
+- **Listing:** full description, capabilities, support link and icon.
+- **README:** support email is support@zerodrift.ai.
+
 ### 0.1.4
 
-- **Validate skill:** without the plugin's hooks, checks Gmail drafts before sending too.
+- **Validate skill:** Codex checks Gmail drafts with ZeroDrift before sending.
 
 ### 0.1.3
 
@@ -48,6 +57,10 @@ First release. ZeroDrift for Codex from `ZeroDriftAI/zerodrift-codex-plugin`.
 - **Check on request:** ask Codex to check a draft with ZeroDrift.
 
 ## OpenAI directory
+
+### 0.1.5
+
+- **Review:** clearer expected behavior for each test case. Available in the US.
 
 ### 0.1.4
 

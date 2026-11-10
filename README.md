@@ -57,5 +57,5 @@ Claude Code (terminal, IDE extensions and the desktop app's Code tab). In claude
 
 ## Support
 
-[support@zerodrift.com](mailto:support@zerodrift.com)
+[support@zerodrift.ai](mailto:support@zerodrift.ai)
 [https://zerodrift.com](https://zerodrift.com)
