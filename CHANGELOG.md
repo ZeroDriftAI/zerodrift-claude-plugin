@@ -4,6 +4,10 @@ Each target has its own version. A release publishes only the targets whose vers
 
 ## Claude
 
+### 0.1.7
+
+- **Validate skill:** results are shown as a table of flagged lines with severity, rule and policy, without the job ID.
+
 ### 0.1.6
 
 - **Icon:** new ZeroDrift icon.
@@ -44,6 +48,10 @@ First release. Validates drafts with ZeroDrift; never rewrites them.
 
 ## Codex
 
+### 0.1.7
+
+- **Validate skill:** results are shown as a table of flagged lines with severity, rule and policy, without the job ID.
+
 ### 0.1.6
 
 - **Icon:** new ZeroDrift icon.
@@ -65,6 +73,14 @@ First release. ZeroDrift for Codex from `ZeroDriftAI/zerodrift-codex-plugin`.
 - **Check on request:** ask Codex to check a draft with ZeroDrift.
 
 ## OpenAI directory
+
+### 0.1.8
+
+- **Validate skill:** results are shown as a table of flagged lines with severity, rule and policy, without the job ID.
+
+### 0.1.7
+
+- **Validate skill:** also checks an email or Slack message before sending it, and doesn't send when the result is Flagged or the check fails.
 
 ### 0.1.6
 
