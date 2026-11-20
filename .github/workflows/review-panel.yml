@@ -18,6 +18,8 @@ on:
 
 permissions:
   contents: read
+  pull-requests: write   # labels, reactions and status comments on the PR (this repo's GITHUB_TOKEN)
+  issues: write
 
 jobs:
   panel:
