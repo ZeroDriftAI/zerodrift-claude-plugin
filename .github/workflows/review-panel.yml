@@ -2,11 +2,12 @@
 #
 # How to ask for a review:
 #   - add the "review-panel" label to the PR, or
-#   - comment "/review-panel" on the PR (repo owners, org members and collaborators only).
+#   - comment exactly "/review-panel" on the PR (repo owners, org members and collaborators only).
 # After you push fixes, ask again the same way: the panel re-reviews only what changed and
 # checks whether its earlier findings were fixed.
 #
-# The work happens in ZeroDriftAI/zd-ai-review-panel. This runner never checks out or runs PR code.
+# The work happens in ZeroDriftAI/zd-ai-review-panel (main is protected: changes need a reviewed PR).
+# This runner never checks out or runs PR code, and only the two review-panel secrets are passed on.
 name: review-panel
 
 on:
@@ -23,7 +24,9 @@ jobs:
     if: >-
       (github.event_name == 'pull_request_target' && github.event.label.name == 'review-panel') ||
       (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
-       startsWith(github.event.comment.body, '/review-panel') &&
+       contains(fromJSON('["/review-panel", "/review-panel\n", "/review-panel\r\n"]'), github.event.comment.body) &&
        contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
     uses: ZeroDriftAI/zd-ai-review-panel/.github/workflows/review-panel.yml@main
-    secrets: inherit
+    secrets:
+      REVIEW_PANEL_ANTHROPIC_API_KEY: ${{ secrets.REVIEW_PANEL_ANTHROPIC_API_KEY }}
+      REVIEW_PANEL_GH_TOKEN: ${{ secrets.REVIEW_PANEL_GH_TOKEN }}
