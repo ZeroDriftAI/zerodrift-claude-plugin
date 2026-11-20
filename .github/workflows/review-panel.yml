@@ -1,0 +1,29 @@
+# Starts the ZeroDrift review panel on a PR. Copy this file to .github/workflows/review-panel.yml in each repo.
+#
+# How to ask for a review:
+#   - add the "review-panel" label to the PR, or
+#   - comment "/review-panel" on the PR (repo owners, org members and collaborators only).
+# After you push fixes, ask again the same way: the panel re-reviews only what changed and
+# checks whether its earlier findings were fixed.
+#
+# The work happens in ZeroDriftAI/zd-ai-review-panel. This runner never checks out or runs PR code.
+name: review-panel
+
+on:
+  pull_request_target:
+    types: [labeled]
+  issue_comment:
+    types: [created]
+
+permissions:
+  contents: read
+
+jobs:
+  panel:
+    if: >-
+      (github.event_name == 'pull_request_target' && github.event.label.name == 'review-panel') ||
+      (github.event_name == 'issue_comment' && github.event.issue.pull_request &&
+       startsWith(github.event.comment.body, '/review-panel') &&
+       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.comment.author_association))
+    uses: ZeroDriftAI/zd-ai-review-panel/.github/workflows/review-panel.yml@main
+    secrets: inherit
